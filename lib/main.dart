@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'constants.dart';
 import 'home/home_screen.dart';
 
 void main() {
@@ -13,6 +14,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        //默认全局文本颜色
+        textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor),
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
